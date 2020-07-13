@@ -13,11 +13,24 @@
     "upload",
     "webpack"
   ],
+  "directories": {
+    "lib": "libs"
+  },
   "files": [
     "sftp",
     "plugins",
-    "libs"
+    "libs",
+    "readme.md",
+    "LICENSE"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synthet1c/webpack-ultimate-sftp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/synthet1c/webpack-ultimate-sftp/issues"
+  },
+  "homepage": "https://github.com/synthet1c/webpack-ultimate-sftp#readme",
   "author": "Andrew Fountain",
   "license": "MIT",
   "devDependencies": {
