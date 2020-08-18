@@ -1,6 +1,6 @@
 {
   "name": "webpack-ultimate-sftp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A concurrent sftp webpack plugin that allows authentication with either a password or ssh private key",
   "main": "index.js",
   "scripts": {

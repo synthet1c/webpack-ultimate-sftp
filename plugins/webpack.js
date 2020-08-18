@@ -8,7 +8,13 @@ const { red, gray } = require('chalk')
 class WebpackPlugin extends Plugin {
 
   apply(compiler) {
-    compiler.hooks.done.tapPromise('upload-plugin', this.handleEvent)
+    if (compiler.hooks) {
+      compiler.hooks.done.tapPromise('upload-plugin', this.handleEvent)
+    }
+    else {
+      compiler.plugin("done", this.handleEvent);
+    }
+
   }
 
   handleEvent = (stats) => {
